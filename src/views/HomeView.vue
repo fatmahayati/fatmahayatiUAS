@@ -1,9 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-  <table class="table">
+   <h1>Belajar form dan Vue Event</h1>
+
+<div class="container">
+ 
+  <p>Nama</p>
+  <input v-model="nama" type="text" class="form-text">
+  <p>Nim</p>
+  <input v-model="nim" type="text" class="form-text">
+  <div class="mt-2">
+  <button  type="submit" class="btn btn-info" @click.prevent="simpanData">Simpan</button>
+</div>
+</div>
+
+<hr>
+<table class="table">
 <thead>
   <tr>
     <th>Nama</th>
